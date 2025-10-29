@@ -11,14 +11,14 @@ This project explores the Car Make Verification (CMV) task - determining whether
 
 The study compares both methods on the **CompCars dataset**, evaluating accuracy and performance trade-offs.
 
-### Classification + SVM
+## Classification + SVM
 - **Backbone:** ResNet18 pre-trained on ImageNet  
 - **Optimizer:** SGD (lr = 1e-4)  
 - **Loss:** Cross Entropy  
 - **Verification:** SVM with RBF kernel on feature differences  
 - **Result:** 78.57% verification accuracy
 
-### Siamese Network
+## Siamese Network
 - **Architecture:** Dual ResNet18 branches with shared weights  
 - **Embedding dimension:** 128, ℓ2-normalized  
 - **Loss:** Contrastive Loss (margin = 1.5)  
@@ -49,7 +49,3 @@ This demonstrates that leveraging pre-trained feature extractors combined with t
 - PyTorch  
 - scikit-learn  
 - NumPy, Matplotlib, UMAP  
-
-
-## 📂 Repository Structure
-
